@@ -14,7 +14,7 @@ router.post("/analyze_url", (req, res) => {
   request.post(options).form({
     extractors: "topics",
     classifiers: "textrazor_iab_content_taxonomy",
-    url: req.body.url
+    url: req.headers["url"]
   }).pipe(res);
 });
 
