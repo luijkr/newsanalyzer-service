@@ -1,0 +1,20 @@
+{
+  "name": "newsanalyzer-service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "service.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "netlify-lambda": "^1.6.3",
+    "request": "^2.88.0",
+    "serverless-http": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
